@@ -47,15 +47,23 @@ input.error {
 }
 
 button {
-  padding: 10px 15px;
-  background-color: rgb(70, 153, 179);
-  color: white;
-  border: 1px solid rgb(70, 153, 179);
-  background-color: 250ms;
+  background-color: white;
+  color: #4d25e0;
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.45rem 1.15rem;
+  margin: 0 1.5rem;
+  letter-spacing: 0.01rem;
+  transition: all 0.25s ease-in-out;
 }
 
 button:hover {
   cursor: pointer;
-  background-color: white;
-  color: rgb(70, 153, 179);
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  color: #4d25e0;
+  background-color: #efeaff;
+  transition: all 0.25s ease;
 }

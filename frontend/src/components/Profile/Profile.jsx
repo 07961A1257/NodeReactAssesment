@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 // import { useSearchParams } from "react-router-dom";
 import axios from "../../apis/axios";
+import ErrorComponent from "./../ErrorComponent";
 
 const Profile = () => {
   const [loading, setLoading] = useState(false);
@@ -18,17 +19,17 @@ const Profile = () => {
         .get(`/${id}`)
         .then((res) => {
           if (res.status === 200) {
-            console.log(res.data);
             setUser(res.data);
-            setLoading(false);
             setError("");
           }
         })
         .catch((err) => {
-          setLoading(false);
           setUser([]);
           setError(err.data);
           console.log(err);
+        })
+        .finally(() => {
+          setLoading(false);
         });
     };
 
@@ -43,6 +44,7 @@ const Profile = () => {
         </div>
       </div>
       {loading && <h4>Loading</h4>}
+      {error && <ErrorComponent errorMessage={error} />}
       {user.length === 0 && <h4>No user found</h4>}
       {user.length > 0 && (
         <>

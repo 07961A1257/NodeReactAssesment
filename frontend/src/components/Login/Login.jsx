@@ -92,7 +92,11 @@ const Login = () => {
             {errors.password && touched.password && (
               <div className="input-feedback">{errors.password}</div>
             )}
-            <button type="submit" disabled={isSubmitting}>
+            <button
+              type="submit"
+              disabled={isSubmitting}
+              style={{ backgroundColor: "#5933e4", color: "white", margin: 0 }}
+            >
               Login
             </button>
             {error && <h3 style={{ color: "red" }}>{error}</h3>}
