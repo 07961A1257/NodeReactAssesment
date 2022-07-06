@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="container mt-5"
+  >
+    <div
+      class="row justify-content-left"
+    >
+      <div
+        class="col-12"
+      >
+        <h3>
+          Profile
+        </h3>
+      </div>
+    </div>
+    <h4>
+      Loading
+    </h4>
+    <h4>
+      No user found
+    </h4>
+  </div>
+</DocumentFragment>
+`;

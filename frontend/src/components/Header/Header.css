@@ -1,0 +1,38 @@
+.mainContainer {
+  min-height: 6vh;
+  background-color: #4d25e0;
+  padding: 1rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.linksContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+}
+
+.links_button {
+  margin-right: 0.85rem;
+  background-color: white;
+  color: #4d25e0;
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.45rem 1.15rem;
+  margin: 0 1.5rem;
+  letter-spacing: 0.01rem;
+  transition: all 0.25s ease-in-out;
+}
+
+.links_button:hover {
+  cursor: pointer;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  color: #4d25e0;
+  background-color: #efeaff;
+  transition: all 0.25s ease;
+}
