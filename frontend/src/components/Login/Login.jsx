@@ -18,7 +18,7 @@ const Login = () => {
           sessionStorage.setItem("IS_LOGGED_IN", true);
           sessionStorage.setItem("USER_ID", id);
           sessionStorage.setItem("USER_ROLE", role);
-          console.log(role);
+
           if (role && role.toLowerCase() === "employee") {
             navigate("/Profile");
             // navigate({

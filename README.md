@@ -8,6 +8,8 @@
 
 # Need to install MariaDB locally and execute the scripts from backend folder
 
+# Added env_local file to store connection string which needs to be updated
+
 # to start project -- npm run dev
 
 # to view the swagger documentation, navigate to http://localhost:8000/api-docs/

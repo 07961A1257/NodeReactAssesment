@@ -2,7 +2,7 @@
   min-height: 6vh;
   background-color: #4d25e0;
   padding: 1rem 0.5rem;
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   align-items: center;
 }
@@ -35,4 +35,10 @@
   color: #4d25e0;
   background-color: #efeaff;
   transition: all 0.25s ease;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  color: white;
 }

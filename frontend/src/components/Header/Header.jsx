@@ -8,6 +8,7 @@ const Header = () => {
   return (
     <div className="mainContainer">
       <div className="linksContainer">
+        <h2>Assignment</h2>
         <button
           to="/"
           className="links_button"

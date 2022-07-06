@@ -6,7 +6,6 @@ import UserDetails from "./../UserDetails/UserDetails";
 import PrivateRoute from "./PrivateRoute";
 
 const RouteComponent = () => {
-  debugger;
   const IS_ADMIN = sessionStorage.getItem("USER_ROLE") === "ADMIN";
 
   return (
